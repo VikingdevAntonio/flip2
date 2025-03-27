@@ -148,6 +148,11 @@
   width: 100%;
   height: 800px;
 }
+@media (max-width: 992px) {
+  .menu1{
+    height: 400px;
+  }
+}
 .misMenus{
   display: flex;
   flex-direction: row;
