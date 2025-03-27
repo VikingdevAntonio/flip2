@@ -113,6 +113,11 @@
 .flipbook{
   margin-top: 50px;
 }
+@media (max-width: 992px) {
+  .flipbook{
+    margin-top: 5px;
+  }
+}
 
 .flipbook2 img{
   width: 100%;
@@ -120,12 +125,22 @@
 .flipbook2{
   margin-top: 50px;
 }
+@media (max-width: 992px) {
+  .flipbook2{
+    margin-top: 5px;
+  }
+}
 
 .flipbook3 img{
   width: 100%;
 }
 .flipbook3{
   margin-top: 50px;
+}
+@media (max-width: 992px) {
+  .flipbook3{
+    margin-top: 5px;
+  }
 }
 
 .menu1{
