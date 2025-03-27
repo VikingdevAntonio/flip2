@@ -1,5 +1,6 @@
 
 
+
 .flipbook-viewport {
   overflow: hidden;
   width: 90%;
@@ -9,12 +10,21 @@
 .flipbook-viewport .container {
  position: absolute;
  padding: 20px;
-  top: 0;
-  left: 0;
-  margin: auto;
+ /*top: 0;
+ left: 0;*/
+ margin: auto;
+ text-align: center;
 }
 
 .flipbook-viewport .flipbook {
+  width: 922px;
+  height: 700px;
+}
+.flipbook-viewport .flipbook2 {
+  width: 922px;
+  height: 700px;
+}
+.flipbook-viewport .flipbook3 {
   width: 922px;
   height: 700px;
 }
@@ -24,10 +34,16 @@
     height: 350px;
   }
 }
-
 @media (max-width: 992px) {
-  .flipbook-viewport .page{
-    height: 400px;
+  .flipbook-viewport .flipbook2 {
+    width: 100%;
+    height: 350px;
+  }
+}
+@media (max-width: 992px) {
+  .flipbook-viewport .flipbook3 {
+    width: 100%;
+    height: 350px;
   }
 }
 
@@ -41,7 +57,27 @@
   background-size: 100% 100%;
 }
 
+@media (max-width: 992px) {
+  .flipbook-viewport .page{
+    height: 400px;
+  }
+}
+
 .flipbook .page {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.flipbook2 .page {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.flipbook3 .page {
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -78,18 +114,31 @@
   margin-top: 50px;
 }
 
-.menu1{
+.flipbook2 img{
   width: 100%;
-  height: 800px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  background: red;
+}
+.flipbook2{
+  margin-top: 50px;
 }
 
+.flipbook3 img{
+  width: 100%;
+}
+.flipbook3{
+  margin-top: 50px;
+}
+
+.menu1{
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+.misMenus{
+  display: flex;
+  flex-direction: row;
+}
 @media (max-width: 992px) {
-  .menu1{
-    height: 450px;
+  .misMenus{
+    flex-direction: column;
   }
 }
